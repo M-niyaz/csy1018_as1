@@ -1,0 +1,381 @@
+body {
+  display: flex; /* makes everything within the body to grow or shrink, when adjeustin site */
+  line-height: 100%; 
+  flex-direction: column; /* the direction of flex ifromed into colum when shrink*/
+  margin: 0px;
+  min-height: 100vh;
+  text-align: center;
+  font-family: 'Arial', san-serif; /* main font family is set to Arial */
+  background-color: darkgrey; /* background color is set to darkgrey */
+}
+
+header {
+  background-color: #3b00ff; /* background color of where the header is posotion is set to navy blue */
+  height: 120px; /* height is set to 120 pixels */
+  padding:4px;  /* adds another stroke of 4 pixels  */
+  order: -1;
+  border: 5px solid #0076ff; /* header box is given a border of 5 pixels of turqouise  */
+}
+
+header h1{
+  text-transform: uppercase; /* all text within this element is set to uppercase */
+  font-size: 50px; /* set to 50pixels */
+  text-align: center; /* text is centered  */
+  color: aliceblue; 
+}
+
+header h2{
+  font-variant: small-caps; /* text is transformed to lower caps  */
+  text-align: center;
+  color: #113f67; /* colour is set to a greyish blue */
+  font-size: 40px;
+}
+
+main h3{ /* header for main page */
+  font-family: 'Arial', san-serif; /* font is set to Arial*/
+  text-align: center; /* text is centered */
+  color:#0076ff; /* colour of text is set to navy blue */
+  text-transform: uppercase;
+  font size: 30px;
+}
+
+.nav a.active {
+  color: #000bf7; /* when tab/page is active, colour is set to dark blue*/
+}
+
+.footer {
+  padding: 1px;; /* footer gets a padding of 1 pixel*/
+  background-color: gray; /* colour of footer is grey */
+  text-align: center; 
+  display: block;
+}
+
+/* some of the code is borrowed, will note beside the code */
+/* Style all font awesome icons */
+.fa { /* this css styling was borrowed. gave a oval background for my icons*/
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7; /* here i added a hover feature when on icon; opacity is reduced to show highlight */
+}
+
+.fa-facebook { /* facebook icon in footer */
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter { /* twitter icon in footer */
+  background: #55ACEE; /* background is set to blue */
+  color: white;
+}
+
+.fa-instagram { /* insta icon in footer */
+  background: #125688; /* background is set to light blue */
+  color: white;
+}
+
+.fa-youtube { /* youtube icon in footer */
+  background: #bb0000; /* background is set to red */
+  color: white;
+}
+
+.fa-snapchat-ghost { /* snapchat footer in icon */
+  background: #fffc00; /* background is set to yellow */
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+footer nav{ /* nav for footer */
+  display: inline; /* display elements all inline*/
+  float: left; /* elements within float left of the footer */
+  text-align: center; /* text is align center position */
+}
+
+.wrapper { /* wrapper css was borrowed from codepen resource */
+  display: flex; 
+  flex-direction: column;
+  flex: 1 0 auto; 
+}
+
+.main{
+  padding: 1em;
+  text-align: center;
+  background-color: none;
+}
+
+.main_menu {
+  padding: 2px, 0, 2px;
+  text-align: center;
+  line-height: 32px;
+  background-color: gray;
+}
+
+ul.main_menu {
+  margin-top: 0px;
+}
+
+.main_menu li{
+  display: inline-block; /* displays the navigation tabs inline*/
+  padding: 0, 10px, , 10px;
+  font-size: 14px;
+}
+
+.main_menu a {
+  text-decoration:none; 
+  color: antiquewhite; /* tab text is set to white */
+  padding: 3px;
+  font-variant: small-caps;
+}
+
+.main_menu a:hover {
+  color: #006cff; /* when tab is highlighted its set to blue*/
+}
+
+  
+.pic1 { /* this element is picture of mohammed in the home page */
+  float: left; /* image is seen left on screen*/
+  margin: 0, 20, 10,20;
+  height: 300px;
+  width: 180px; 
+  float: left;
+  border: 5px solid #0076ff; /* given a border of 5 pixels with colour */
+}
+
+
+.pic2 { /* this element is pictur of Tom in the home page */
+  margin: 0, 20, 10,20;
+  height: 300px;
+  width: 220px; 
+  float: right; /* image is seen on the right of the screen*/
+  border: 5px solid #0076ff; /* given a border o 5 pixels with colour */
+}
+
+#bio1  { /* first paragraph in home page */
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  padding: 1em;
+  color: #000000;
+}
+
+#bio2 { /* second paragraph in home page*/
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  color: #000000;
+}
+
+.video1 { /* this is the youtube video in the home page */
+  border: 3px solid #0076ff; /* given a border of 3 pixels and colour */
+  width: 560px; 
+  height: 315px;
+}
+
+main h4{ /* header in second page*/
+  font-family:sans-serif;
+  font-size: 20px;
+  color: #0076ff;
+}
+
+.A{ /* text is given a class A element in second page */
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  padding: 1em;
+  border: 3px solid #0d04ea; /* border colour blue and 3 pixels  */
+}
+
+.B{ /* text is given a class B element in second page*/
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  padding: 1em;
+  border: 3px solid #b504ea; /* border colour purple and 3 pixels */
+}
+
+#sidebar1 { /* siderbar in page 3*/
+  background-color: #2cb1c9; /* colour of lightblue*/
+  float: left; /* sidebar floats left of the screen*/
+  min-height: 380px;
+  width: 400px;
+  display: flex;
+  flex-direction: column; /* its is set to a column formation*/
+}
+
+#sidebar2 { /* sidebar in page 3, similar to sidebar 1 but floats right  */
+  background-color: #2cb1c9;
+  float: right;
+  min-height: 380px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+
+#Column1 { /* the center column in page 3 */
+  background-color: aquamarine;
+  margin-left: 200px;
+  margin-right: 200px;
+  min-height: 380px; 
+}
+
+.C{ /* text is given class */
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+
+}
+
+.D{ /* text is given class */
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+}
+
+.D1{
+  height: 230px; 
+  width: 400px; 
+  border: 3px solid #0076ff;
+}
+
+#Column2 { /* middle column for page 5*/
+  margin-top: 20px;
+  background-color: aquamarine;
+  margin-left: 150px;
+  margin-right: 150px;
+  min-height: 250px;
+}
+
+.E { /* text class */
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+}
+
+.YT { /* youtube video seen in page 4*/
+  float: left; /* floats left */
+  border: 3px solid #0076ff; /*  border of 3 pixels, colour blu */
+  width: 660px; 
+  height: 515px;
+}
+
+#box4 { /* box is see page 4 */
+  background-color: #2cb1c9; /* box colour is set to light blue*/
+  float: right;
+  height: 550px;
+  width: 600px;
+  display: flex;
+  flex-direction: column; /* set column format, having text centered */
+  margin-right: 30px;
+  margin-top: 3px;
+  margin-bottom: 11px;
+
+}
+
+#wire1 { /* image of wireframe 1 */
+  margin: 0, 20, 10,20;
+  height: 400px;
+  width: 500px; 
+  float: left;
+  border: 5px solid #0076ff;
+}
+
+#wire2 { /* image of wireframe 2 */
+  margin: 0, 20, 10,20;
+  height: 400px;
+  width: 500px; 
+  float: right;
+  border: 5px solid #0076ff;
+}
+
+#term { /*text styling for terms */
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  padding: 1em;
+  color: #000000;
+  border: 5px solid #0076ff;
+}
+
+.prints { /* screenprints seen in page 6 */
+  height: 500px;
+  width: 80%; 
+}
+
+
+.map { /* this is the adjustments i made my map to fit in the contact page */
+  margin-top: 20px;
+  float: right;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  width: 600px;
+  height: 450px; 
+  border: 3px solid #0076ff;
+}
+
+#bar1 { /* this is the box above seen in the contact form*/
+  margin-right: 200px;
+  margin-left: 700px;
+  
+}
+
+/* some of the form code was borrowed*/
+/* i made adjustment to sizing and the container*/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  height: 500px;
+  width: 500px;
+  
+
+  
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

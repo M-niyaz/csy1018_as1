@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"><!--declares language is english--><!--page 7-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Made with Thimble</title>
+    <link rel="stylesheet" href="style.css"><!--refers to stylesheet css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--refers to the stylesheet i borrowed to make my icons-->
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html">Web Development</a></h1> <!--main header of site that links to main page-->
+      <h2>Contact</h2>
+    </header>
+    <nav class="nav"> <!--navigation bar-->
+      <ul class="main_menu">
+        <li><a href="Page1.html">Glossary</a></li> <!--tab 1 / page2-->
+        <li><a href="Page2.html">Jobs</a></li> <!--tab 2 / page 3-->
+        <li><a href="Page3.html">Computing</a></li> <!--tab 3 / page 4 -->
+        <li><a href="Page4.html">Designs</a></li> <!--tab 4 / page 5-->
+        <li><a href="Page5.html">Validation</a></li><!--tab 5 / page 6-->
+        <li><a href="Page6.html" class="active">Contact Us</a></li> <!-- tab 6 / page 7--> <!--when on age, tab is highlighted-->
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <main class="main">
+        
+        <div id="bar1" style="border: 3px solid #0076ff;"><b>General Enquiries</b><!--bold tag added--><p>niyaz.rahman17@my.northampton.ac.uk</p> <!--information-->
+        </div>
+        
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19540.535383432638!2d-0.9092853616533761!3d52.25124947976422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48770ec77e6956df%3A0x7438a31e23049eea!2sAvenue+Campus!5e0!3m2!1sen!2suk!4v1516276097704" allowfullscreen></iframe> <!--this is the source i use to make my map to work-->
+        
+        <div class="container"> <!--containe tag added to enclos the contact form code-->
+          <form action="action_page.php"> <!-- form tag was added-->
+
+            <label for="fname">First Name</label> <!--first subject / first line on contact form-->
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label> <!--second subject / second line on contact form-->
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label> <!--third subject / thrid line of contact-->
+            <select id="country" name="country"><!--select tag added to give option to function-->
+            <option value="England">England</option> <!--drop down option added, link to css-->
+            <option value="Wales">Wales</option> <!--drop down option added, link to css-->
+            <option value="Scotland">Scotland</option><!--drop down option added, link to css-->
+            <option value="Northern Ireland">Northern Ireland</option><!--drop down option added, link to css-->
+          </select>
+
+            <label for="subject">Leave your comments here...</label> <!--fourth subject of contact option-->
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea> <!--place holder is added to show you can input--> <!--style is set to 200pixels-->
+
+            <input type="submit" value="Submit"> <!--input button is added-->
+
+          </form> <!--form tag closed-->
+        </div>
+      </main>
+    </div>    
+     
+    <footer class="footer"> <!--footer tag-->
+      <nav><!--footer naviagtion bar-->
+        <ul class="main_menu">
+          <li><a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a></li> <!--facebook icon/link-->
+          <li><a href="https://twitter.com" class="fa fa-twitter" target="_blank"></a></li><!--twiter icon/link-->
+          <li><a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"></a></li><!--instagram icon/link-->
+          <li><a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a></li><!--youtube link/icon-->
+          <li><a href="https://www.snapchat.com" class="fa fa-snapchat-ghost" target="_blank"></a></li><!--snapchat icon / link-->
+          <li><a href="index.html">Main Menu</a></li>
+          <li><a href="Page2.html">Glossary</a></li>
+          <li><a href="Page6.html">Contact Us</a></li> <!--tabs refer to some pages of the site-->
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
